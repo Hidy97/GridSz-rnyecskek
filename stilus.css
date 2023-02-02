@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+img{
+    width: 100px;
+    height: 100px;
+}
+
+/*Gridelicious*/
+article{
+    display: grid;
+    grid-template-columns: repeat(4, 110px);
+    grid-template-rows: 200px 100px 300px;
+}
+/*Grid vége*/
+
 main, header, nav, article, div, section{
     border: 1px solid lightgrey;
 }

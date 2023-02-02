@@ -15,8 +15,26 @@ article{
     grid-gap: 10px;
     grid-template-columns: repeat(4, 110px);
     /* grid-template-columns: repeat(4, 1fr); */
-    grid-template-columns: repeat(4, auto);
+    /* grid-template-columns: repeat(4, auto);*/
 }
+
+article div:nth-child(1){
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/* Rövidítve
+article div:nth-child(2){
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+vagy
+article div:nth-child(2){
+    grid-area: 1 / 2 / 2 / 3;
+}
+*/
 /*Grid vége*/
 
 main, header, nav, article, div, section{
